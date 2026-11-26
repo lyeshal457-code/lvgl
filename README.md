@@ -151,3 +151,4 @@ It requires a working version of GCC, GDB and make in your path.
 To allow debugging inside VSCode you will also require a GDB [extension](https://marketplace.visualstudio.com/items?itemName=webfreak.debug) or other suitable debugger. All the requirements, build and debug settings have been pre-configured in the [.workspace](simulator.code-workspace) file.
 
 The project can use **SDL** but it can be easily relaced by any other built-in LVGL dirvers.
+# lvgl
