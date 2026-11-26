@@ -152,3 +152,4 @@ To allow debugging inside VSCode you will also require a GDB [extension](https:/
 
 The project can use **SDL** but it can be easily relaced by any other built-in LVGL dirvers.
 # lvgl
+# lvgl
