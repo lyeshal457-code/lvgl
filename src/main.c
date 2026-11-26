@@ -52,6 +52,8 @@
 
 #if LV_USE_OS != LV_OS_FREERTOS
 
+void my_carousel(void);
+
 int main(int argc, char **argv)
 {
   (void)argc; /*Unused*/
@@ -61,16 +63,17 @@ int main(int argc, char **argv)
   lv_init();
 
   /*Initialize the HAL (display, input devices, tick) for LVGL*/
-  sdl_hal_init(320, 480);
+  sdl_hal_init(640, 480);
 
   /* Run the default demo */
   /* To try a different demo or example, replace this with one of: */
-  /* - lv_demo_benchmark(); */
+  //lv_demo_benchmark(); 
   /* - lv_demo_stress(); */
   /* - lv_example_label_1(); */
   /* - etc. */
-  lv_demo_widgets();
-
+  //lv_demo_widgets();
+	//lv_example_get_started_1();
+  my_carousel();
   while(1) {
     /* Periodically call the lv_task handler.
      * It could be done in a timer interrupt or an OS task too.*/
@@ -94,4 +97,3 @@ int main(int argc, char **argv)
 /**********************
  *   STATIC FUNCTIONS
  **********************/
-
